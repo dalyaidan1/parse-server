@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 describe('FilesRouter', () => {
-  describe('File Uploads', () => {
+  describe_only_db('mongo')('File Uploads', () => {
 
     beforeEach(async () => {
       // Set the maxUploadSize to 1GB
